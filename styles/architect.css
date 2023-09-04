@@ -76,10 +76,11 @@ nav li a {
 }
 
 /* main styles */
-main{
+main {
     max-width: 1440px;
     margin: 70px auto;
 }
+
 .teams-container {
     display: flex;
     background-color: #fff;
@@ -94,25 +95,65 @@ main{
     gap: 24px;
     border-radius: 8px;
 }
-.teams-content{
+
+.teams-content {
     padding: 70px 70px;
 }
 
 
 .teams-title {
-    font-size: 2.8rem;   
-    
+    font-size: 2.8rem;
+
 }
-.teams-title .quick-list{
+
+.teams-title .quick-list {
     font-weight: 500;
 }
-.teams-title .text-features{
-    color:#FF900E;
+
+.teams-title .text-features {
+    color: #FF900E;
     font-weight: 700;
 }
 
+/* features section */
+.features {
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+.features .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
 
+.feature-img img{
+    margin-left: 100px;
+}
+.features-content .card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
 
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 46px;
+    width: 342px;
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    margin: auto;
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
+}
 
 
 
@@ -124,18 +165,33 @@ main{
     }
 
     nav,
-    .teams-container{
+    .teams-container,
+    .features {
         flex-direction: column;
     }
-    .teams-container{
+
+    .teams-container {
         padding: 5px;
     }
-    .teams-img-container{
+
+    .teams-img-container {
         grid-template-columns: 1fr;
     }
-    .teams-content{
+
+    .teams-content {
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .features{
+        margin-top: 50px;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .ten-years-badge{
+       position: static;
+       max-width: 300px;
     }
 }
 
@@ -144,7 +200,14 @@ main{
     .header {
         padding: 50px;
     }
-    nav {
+
+    nav,
+    .teams-container,
+    .features {
         flex-direction: column;
+    }
+
+    .teams-container {
+        padding: 0;
     }
 }
